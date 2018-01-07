@@ -155,23 +155,7 @@ if(a<=0) todo;\par
     在实现文件中，对读入的每条指令分解为opcode,rs,rt,rd,reserved等部分，
     从而实现对指令的译码，这一点与硬件上保持一致。关于软件的更多细节在此不再赘述，项目的详细文档可以在
     \url{https://github.com/xiejiangzhao/MIPS_Predict}获取，在此基础上还可以加入对x86指令集，新增其他预测方法的支持。\newpage
-  
-\section{不同预测方法的效果测试}
-  我在文档中写了一份简短的冒泡排序，然后对若干随机数进行排序，得到以下结果:
-  \begin{figure}[ht]
-    \centering
-      \includegraphics[width=\textwidth]{Figure_1.png}
-      \caption{冒泡排序预测结果\upcite{r1}}
-      \label{fig:4}
-    \end{figure}
-  可见，在这种情况下，全局分支预测器和两位预测器取得了非常不错的效果，融合分支预测器的结果更加平稳。\\
-  \newpage
-  \begin{figure}[ht]
-    \centering
-      \includegraphics[width=\textwidth]{Figure_2.png}
-      \caption{冒泡排序预测结果\upcite{r1}}
-      \label{fig:5}
-    \end{figure}
+
 \section{字体调节}
   
   \begin{tabular}{ll}

@@ -1,0 +1,31 @@
+\BOOKMARK [0][-]{title.0}{\376\377\160\117\117\200\157\160}{}% 1
+\BOOKMARK [0][-]{chapter*.1}{\376\377\223\275\152\077\377\376}{}% 2
+\BOOKMARK [0][-]{chapter*.2}{ABSTRACT}{}% 3
+\BOOKMARK [0][-]{toc.0}{\376\377\224\051\377\376\175\215}{}% 4
+��测算法的意义}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{技术发展现状与趋势}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{静态分支预测技术}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{1bit分支预测器}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.3}{2bit分支预测器}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.4}{局部分支预测器}{section.1.2}% 11
+\BOOKMARK [2][-]{subsection.1.2.5}{全局分支预测器}{section.1.2}% 12
+\BOOKMARK [2][-]{subsection.1.2.6}{混合分支预测器}{section.1.2}% 13
+\BOOKMARK [2][-]{subsection.1.2.7}{基于上述分支预测器的优化}{section.1.2}% 14
+\BOOKMARK [0][-]{chapter.2}{分支预测算法的软件实现与验证}{}% 15
+\BOOKMARK [1][-]{section.2.1}{32位MIPS指令集实现}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.2}{不同预测方法的效果测试}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.3}{字体调节}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.4}{字号调节}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.5}{已加入的常用宏包}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.6}{标点符号的问题}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.7}{引用的问题}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.7.1}{参考文献的引用}{section.2.7}% 23
+\BOOKMARK [2][-]{subsection.2.7.2}{定理和公式的引用}{section.2.7}% 24
+\BOOKMARK [1][-]{section.2.8}{图形与表格}{chapter.2}% 25
+\BOOKMARK [0][-]{chapter.3}{其他事项}{}% 26
+\BOOKMARK [0][-]{section*.12}{参考文献}{}% 27
+\BOOKMARK [0][-]{chapter*.14}{致谢}{}% 28
+\BOOKMARK [0][-]{appendix.A}{测试}{}% 29
+\BOOKMARK [1][-]{section.A.1}{第一个测试}{appendix.A}% 30
+\BOOKMARK [0][-]{appendix.B}{附录测试}{}% 31
+\BOOKMARK [0][-]{appendix.C}{附录测试}{}% 32

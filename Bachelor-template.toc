@@ -7,21 +7,23 @@
 \contentsline {subsection}{\numberline {1.2.2}1bit分支预测器}{2}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}2bit分支预测器}{2}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}局部分支预测器}{3}{subsection.1.2.4}
-\contentsline {chapter}{\numberline {\zihao {-2}2\hspace {.3em}}杂七杂八的话}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Readme}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}更新记录}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}字体调节}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}字号调节}{5}{section.2.4}
-\contentsline {section}{\numberline {2.5}已加入的常用宏包}{6}{section.2.5}
-\contentsline {section}{\numberline {2.6}标点符号的问题}{7}{section.2.6}
-\contentsline {section}{\numberline {2.7}引用的问题}{7}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}参考文献的引用}{7}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}定理和公式的引用}{7}{subsection.2.7.2}
-\contentsline {section}{\numberline {2.8}图形与表格}{8}{section.2.8}
-\contentsline {chapter}{\numberline {\zihao {-2}3\hspace {.3em}}其他事项}{10}{chapter.3}
-\contentsline {chapter}{参考文献}{11}{section*.6}
-\contentsline {chapter}{致谢}{12}{chapter*.8}
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}测试}{13}{appendix.A}
-\contentsline {section}{\numberline {A.1}第一个测试}{13}{section.A.1}
-\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}附录测试}{14}{appendix.B}
-\contentsline {chapter}{\numberline {附录 C\hspace {.3em}}附录测试}{15}{appendix.C}
+\contentsline {subsection}{\numberline {1.2.5}全局分支预测器}{4}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}基于上述分支预测器的优化}{4}{subsection.1.2.6}
+\contentsline {chapter}{\numberline {\zihao {-2}2\hspace {.3em}}杂七杂八的话}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Readme}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}更新记录}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}字体调节}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}字号调节}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}已加入的常用宏包}{7}{section.2.5}
+\contentsline {section}{\numberline {2.6}标点符号的问题}{8}{section.2.6}
+\contentsline {section}{\numberline {2.7}引用的问题}{8}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}参考文献的引用}{8}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}定理和公式的引用}{8}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}图形与表格}{9}{section.2.8}
+\contentsline {chapter}{\numberline {\zihao {-2}3\hspace {.3em}}其他事项}{11}{chapter.3}
+\contentsline {chapter}{参考文献}{12}{section*.8}
+\contentsline {chapter}{致谢}{13}{chapter*.10}
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}测试}{14}{appendix.A}
+\contentsline {section}{\numberline {A.1}第一个测试}{14}{section.A.1}
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}附录测试}{15}{appendix.B}
+\contentsline {chapter}{\numberline {附录 C\hspace {.3em}}附录测试}{16}{appendix.C}

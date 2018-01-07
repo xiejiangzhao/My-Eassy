@@ -65,7 +65,7 @@
     }
     \par
     \vspace*{2.1cm} %插入空白
-    {\songti \zihao{1} \makebox[9cm][s]{武汉大学本科毕业论文}}\\
+    {\songti \zihao{1} \makebox[9cm][s]{计算机组成原理课程论文}}\\
     \vspace{3.6cm}
     {\heiti \zihao{2} \@title \par}%
 %    \vspace{4cm}

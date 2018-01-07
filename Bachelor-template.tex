@@ -11,8 +11,8 @@
   
   \title{基于流水线CPU的分支预测技术性能研究}
   \Etitle{Research on the Performance of Branch Prediction Technology Based on Pipeline CPU} % 英文题目
-  \author{谢江钊\quad 徐正金}                            % 作者名字
-  \Eauthor{Xie Jiangzhao\quad Xv Zhengjin}            %作者英文名
+  \author{谢江钊}                            % 作者名字
+  \Eauthor{Xie Jiangzhao}            %作者英文名
   \Csupervisor{李国桢\quad 教授}        %指导教师中文名、职称
   \Esupervisor{Prof.~Li Guozhen}     %指导教师英文名、职称
   \Cmajor{计算机类}                  % 专业中文名
@@ -154,208 +154,37 @@ if(a<=0) todo;\par
     至于更具体的细节可以参考\url{http://blog.csdn.net/yixilee/article/details/4316617}
     在实现文件中，对读入的每条指令分解为opcode,rs,rt,rd,reserved等部分，
     从而实现对指令的译码，这一点与硬件上保持一致。关于软件的更多细节在此不再赘述，项目的详细文档可以在
+    \url{https://github.com/xiejiangzhao/MIPS_Predict}获取，在此基础上还可以加入对x86指令集，新增其他预测方法的支持。\newpage
+  
 \section{不同预测方法的效果测试}
-  我在文档中写了一份简短的冒泡排序，然后对若干随机数进行排序，得到以下结果
+  以下对包括多重循环，排序算法等汇编代码进行了测试。\\
   \begin{figure}[ht]
     \centering
-      \includegraphics[width=\textwidth]{Figure_1.png}
-      \caption{冒泡排序预测结果\upcite{r1}}
-      \label{fig:4}
+      \includegraphics[width=14cm]{Figure_1.png}
+      \caption{冒泡排序预测结果}
+      \label{fig:1}
     \end{figure}
-\section{字体调节}
-  
-  \begin{tabular}{ll}
-    \verb|\songti|   & {\songti 宋体}   \\
-    \verb|\heiti|    & {\heiti 黑体}    \\
-    \verb|\fangsong| & {\fangsong 仿宋} \\
-    \verb|\kaishu|   & {\kaishu 楷书}
-  \end{tabular}
-  
-  
-  \section{字号调节}
-  字号命令: \verb|\zihao| \index{zihao}
-  
-  \begin{tabular}{ll}
-  \verb|\zihao{0}| &\zihao{0}  初号字 English \\
-  \verb|\zihao{-0}|&\zihao{-0} 小初号 English \\
-  \verb|\zihao{1} |&\zihao{1}  一号字 English \\
-  \verb|\zihao{-1}|&\zihao{-1} 小一号 English \\
-  \verb|\zihao{2} |&\zihao{2}  二号字 English \\
-  \verb|\zihao{-2}|&\zihao{-2} 小二号 English \\
-  \verb|\zihao{3} |&\zihao{3}  三号字 English \\
-  \verb|\zihao{-3}|&\zihao{-3} 小三号 English \\
-  \verb|\zihao{4} |&\zihao{4}  四号字 English \\
-  \verb|\zihao{-4}|&\zihao{-4} 小四号 English \\
-  \verb|\zihao{5} |&\zihao{5}  五号字 English \\
-  \verb|\zihao{-5}|&\zihao{-5} 小五号 English \\
-  \verb|\zihao{6} |&\zihao{6}  六号字 English \\
-  \verb|\zihao{-6}|&\zihao{-6} 小六号 English \\
-  \verb|\zihao{7} |&\zihao{7}  七号字 English \\
-  \verb|\zihao{8} |&\zihao{8}  八号字 English \\
-  \end{tabular}
-  
-  \section{已加入的常用宏包}
-  
-  \begin{description}
-  %  \item[amsmath,amssymb]
-    \item[cite]  参考文献引用, 得到形如 [3-7] 的样式.
-    \item[color,xcolor]  支持彩色.
-    \item[enumerate]  方便自由选择 enumerate 环境的编号方式. 比如
-  
-    \verb|\begin{enumerate}[(a)]| 得到形如 (a), (b), (c) 的编号.
-  
-  
-    \verb|\begin{enumerate}[i)]| 得到形如 i), ii), iii) 的编号.
-  
-  \end{description}
-  
-  另外要说明的是,  itemize, enumerate, description 这三种 list 环境, 已经调节了其间距和缩进,
-  以符合中文书写的习惯.
-  
-  \section{标点符号的问题}
-  
-  建议使用半角的标点符号, 后边再键入一个空格. 特别是在英文书写中要注意此问题!
-  
-  双引号是由两个左单引号、两个右单引号构成的: \verb|``  ''|. 左单引号在键盘上数字~1 的左边.
-  
-  但是, 无论您偏向于全角或半角, 强烈建议您使用实心的句号, 只要您书写的是自然科学的文章.
-  原因可能是因为, 比如使用全角句号的句子结尾处的``$x$。''容易误为数学式~$x_0$(\verb|$x_0$|)吧.
-  
-  
-  
-  \section{引用的问题}
-  
-  
-  \subsection{参考文献的引用}
-  
-  参考文献的引用, 用命令~\verb|\cite{ }|. 大括号内要填入的字串, 是自命名的文献条目名.
-  
-  比如, 通常我们会说:
-  
-   {\kaishu
-  关于此问题, 请参见文献 \cite{r2}. 作者某某还提到了某某概念\upcite{r1}.}
-  
-  
-  上文使用的源文件为:
-  
-   {\kaishu
-  关于此问题, 请参见文献~\verb|\cite{r2}|. 作者某某还提到了某某概念~\verb|\upcite{r1}|.
-  }
-  
-  其中~\verb|\upcite| 是自定义命令, 使文献引用呈现为\CJKunderdot{上标形式}.
-  
-  ({\heiti 注意:} {\kaishu 这里文献的引用, 有时需要以上标形式出现, 有时需要作为正文文字出现, 为什么?})
-  
-  另外, 要得到形如~\cite{r1,r3,r4,r5} 的参考文献连续引用, 需要用到 cite 宏包(模板已经加入),
-  在正文中使用~\verb|\cite{r1,r3,r4,r5}| 的引用形式即可.
-  或者, 连续引用的上标形式: 使用~\verb|\upcite{r1,r2,r3}|, 得到\upcite{r1,r2,r3}.
-  
-  \subsection{定理和公式的引用}
-  
-  \begin{theorem}[谁发现的]\label{th-abcd}
-  最大的正整数是~$1$.
-  \end{theorem}
-  
-  \begin{proof}
-  要找到这个最大的正整数, 我们设最大的正整数为~$x$, 则~$x \geqslant 1$, 两边同时乘以~$x$, 得到
-  \begin{equation}\label{eq-abc}
-  x^2 \geqslant x.
-  \end{equation}
-  而~$x$ 是最大的正整数, 由~\eqref{eq-abc} 式得到
-  \[
-  x^2 = x.
-  \]
-  所以
-  \begin{equation*}
-  x = 1.
-  \end{equation*}
-  \end{proof}
-  
-  定理~\ref{th-abcd} 是一个重大的发现.
-  
-  %%%%----- 定义等环境的举例 --------
-  \begin{definition}[整数]
-   正整数(例如 1, 2, 3)、负整数(例如 ${−1}$, $−2$, $−3$)与零(0)合起来统称为{\heiti 整数}.
-  \end{definition}
-  
-  \begin{remark}
-    整数集合在数学上通常表示为 $\mathbf{Z}$ 或 $\mathbb{Z}$, 该记号源于德语单词 Zahlen(意为``数'')的首字母.
-  \end{remark}
-  
-  \begin{proposition}
-  任意两个整数相加、相减、相乘的结果, 仍然是整数.
-  \end{proposition}
-  
-  \begin{example}
-    $1+2=3$.
-  \end{example}
-  
-  \begin{corollary}
-     在整数集合内, 相加、相减、相乘运算是封闭的.
-  \end{corollary}
-  
-  \section{图形与表格}
-  
-  支持对~eps, pdf, jpg 等等常见图形格式.
-  
-  再次\colorbox{red!45}{澄清一个误会}: \LaTeX{} 支持的图形格式绝非 eps 这一种. 无需特意把图片转化为 eps.
-  
-  用形如~\verb|\includegraphics[width=12cm]{Daisy.jpg}| 的命令可以纳入图片.
-  
-  如图~\ref{fig:1} 是一个纳入~jpg 图片的例子.
-  
   \begin{figure}[ht]
-  \centering
-    \includegraphics[width=\textwidth]{Daisy.jpg}
-    \caption{一个彩色 jpg 图片的例子}
-    \label{fig:1}
-  \end{figure}
-  
-  表格问题, 建议使用``三线表'', 如表 \ref{tab:1}.
-  
-  \begin{table}[ht]
-  \centering
-  \caption{一般三线表}
-  \label{tab:1}
-      \begin{tabular}{c c c c c c c c c c c}
-      \hline
-      123 & 4  & 5  & 123 & 4 & 5123 & 4 & 5 & 123 & 4 & 5\\
-      \hline
-      67 & 890 & 13 & 123 & 4 & 5123 & 4 & 5 & 123 & 4 & 5\\
-      67 & 890 & 13 & 123 & 4 & 5123 & 4 & 5 & 123 & 4 & 5\\
-      67 & 890 & 13 & 123 & 4 & 5123 & 4 & 5 & 123 & 4 & 5\\
-      \hline
-      \end{tabular}
-  \end{table}
-  
-  
-  
-  
-  
-  
+    \centering
+      \includegraphics[width=14cm]{Figure_2.png}
+      \caption{多层循环+TF变化预测结果}
+      \label{fig:1}
+    \end{figure}
+  \begin{figure}[ht]
+    \centering
+      \includegraphics[width=14cm]{Figure_3.png}
+      \caption{规律跳转预测结果}
+      \label{fig:1}
+    \end{figure}
+  \section{预测结果评价}
+  由预测结果，可见在不同的场景下预测器取得的效果是不同的，甚至差异性比较大。
+  图表中值得留意的一点是，尽管混合分支预测器不能极大地提高正确率，但是预测效果较为稳定，在不同的场景下都能够取得
+  相对优秀的结果。在实际生产环境中，跳转情景将会比上述情况更为复杂，这种不确定性都将会使得单一的分支预测效果
+  不同程度下降，而混合分支预测器则能够较好地去拟合它们。
+
   %%%%============================================================================================================%%%
   
-  \chapter{其他事项}
-  以下是广告时间, 插播一段广告:
-  \begin{itemize}
-      \item 插图\index{插图}的制作, 建议用 pgf, 也叫 tikz.
-            pgf 的长处是源文件直接植入~\TeX~文档, 管理起来非常方便.
-      这里有我写的一个关于初次使用~pgf~的帖子:\\    \url{http://bbs.ctex.org/forum.php?mod=viewthread&tid=30480}.
-      \item 生成参考文献, 建议使用~BibTeX.\index{BibTeX} 这里有我写的一个文档: \\
-      \url{http://bbs.ctex.org/forum.php?mod=viewthread&tid=26056}.
-  
-            {\kaishu 使用 BibTeX{} 做参考文献时,
-        借助 EndNote 或者 NoteExpress, 可以非常漂亮简单地解决 bib 文件的录入问题.
-        NoteExpress 在校图书馆网站有正版软件提供下载.
-        当然 EndNote 本身就是 Thomson Corporation 推出的(和 SCI 搜索引擎是同一家公司),
-        和多个重要文献搜索引擎有良好的功能配合.
-  
-        Google 学术搜索也提供了文献的 bib 格式.
-        录入参考文献时, 偶尔用一用 Google 学术搜索, 还可以核查或减少录入的错误, 并减少录入的工作量.}
-  
-      \item 幻灯片\index{幻灯片}的制作, 建议使用~Beamer. 这里有我写的一个模板, 谨供参考:\\
-      \url{http://bbs.ctex.org/forum.php?mod=viewthread&tid=27695}.
-  \end{itemize}
+  \chapter{项目总结}
   
   
   %%%============================================================================================================%%%

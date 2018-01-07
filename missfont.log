@@ -70,6 +70,7 @@ mktextfm at8
 mktextfm at6
 mktextfm at8
 mktextfm at6
+<<<<<<< HEAD
 mktextfm at8
 mktextfm at6
 mktextfm at8
@@ -142,3 +143,5 @@ mktextfm at8
 mktextfm at6
 mktextfm at8
 mktextfm at6
+=======
+>>>>>>> parent of 48c111b... Fuck0.2

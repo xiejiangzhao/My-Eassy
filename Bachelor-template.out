@@ -2,6 +2,7 @@
 \BOOKMARK [0][-]{chapter*.1}{\376\377\223\275\152\077\377\376}{}% 2
 \BOOKMARK [0][-]{chapter*.2}{ABSTRACT}{}% 3
 \BOOKMARK [0][-]{toc.0}{\376\377\224\051\377\376\175\215}{}% 4
+<<<<<<< HEAD
 ��测算法的意义}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.2}{技术发展现状与趋势}{chapter.1}% 7
 \BOOKMARK [2][-]{subsection.1.2.1}{静态分支预测技术}{section.1.2}% 8
@@ -29,3 +30,5 @@
 \BOOKMARK [1][-]{section.A.1}{第一个测试}{appendix.A}% 30
 \BOOKMARK [0][-]{appendix.B}{附录测试}{}% 31
 \BOOKMARK [0][-]{appendix.C}{附录测试}{}% 32
+=======
+>>>>>>> parent of 48c111b... Fuck0.2

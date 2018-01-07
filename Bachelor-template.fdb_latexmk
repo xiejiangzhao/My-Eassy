@@ -1,9 +1,17 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["pdflatex"] 1515316844 "d:\WHUBachelor(20160607)\Bachelor-template.tex" "Bachelor-template.pdf" "Bachelor-template" 1515316843
   "Bachelor-template.aux" 1515316834 0 d41d8cd98f00b204e9800998ecf8427e ""
   "Bachelor-template.out" 1515316834 0 d41d8cd98f00b204e9800998ecf8427e ""
   "Bachelor-template.tex" 1515316823 21403 50f70212dd3edfe049706ebeb2353111 ""
   "Bachelor-template.toc" 1515316840 0 d41d8cd98f00b204e9800998ecf8427e ""
+=======
+["pdflatex"] 1515315957 "d:\WHUBachelor(20160607)\Bachelor-template.tex" "Bachelor-template.pdf" "Bachelor-template" 1515315956
+  "Bachelor-template.aux" 1515315953 7422 8b622698233aa4c8c4cc0dd5d95f1058 ""
+  "Bachelor-template.out" 1515315953 240 bb3f3128c5b18d4e40809a0c5df3e903 ""
+  "Bachelor-template.tex" 1515315944 20818 f85e4a6aed6b48119faf845b736d0fae ""
+  "Bachelor-template.toc" 1515315920 0 d41d8cd98f00b204e9800998ecf8427e ""
+>>>>>>> parent of 48c111b... Fuck0.2
   "WHUBachelor.cls" 1465484204 9329 1fdbd29de7b15628ca2d3ccca61ef825 ""
   "c:/Windows/Fonts/msyh.ttc" 1506692488 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "d:/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1514891085 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -266,6 +274,7 @@
   "d:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1514893294 2373944 25c5e2254082bc1820a9013020c543a2 ""
   "d:/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1514893371 4125893 189a57fcdf66b279e8caef1994f55dda ""
   "d:/texlive/2017/texmf.cnf" 1514893248 673 4ae7b2f49cee444c5343a45b5d0f169c ""
+<<<<<<< HEAD
   "d:\WHUBachelor(20160607)\Bachelor-template.tex" 1515316823 21403 50f70212dd3edfe049706ebeb2353111 ""
   "figures/sysu.pdf" 1515231686 898494 998805cff504c8bd5877b034a652d3c4 ""
   "includefile/backmatter.aux" 1515316804 1573 c51aca352e434208c08e87b178f6c02b ""
@@ -278,4 +287,18 @@
   "includefile/frontmatter.aux"
   "Bachelor-template.pdf"
   "Bachelor-template.log"
+=======
+  "d:\WHUBachelor(20160607)\Bachelor-template.tex" 1515315944 20818 f85e4a6aed6b48119faf845b736d0fae ""
+  "figures/sysu.pdf" 1515231686 898494 998805cff504c8bd5877b034a652d3c4 ""
+  "includefile/backmatter.aux" 1515315978 1573 6c0b0e1101f325ab5c9b99116d8fe7a4 ""
+  "includefile/frontmatter.aux" 0 -1 0 ""
+  "includefile/frontmatter.tex" 1515291170 5644 8e9805584f5583a2d4cc693defdbe098 ""
+  (generated)
+  "Bachelor-template.toc"
+  "Bachelor-template.aux"
+  "includefile/backmatter.aux"
+>>>>>>> parent of 48c111b... Fuck0.2
   "Bachelor-template.out"
+  "Bachelor-template.log"
+  "includefile/frontmatter.aux"
+  "Bachelor-template.pdf"

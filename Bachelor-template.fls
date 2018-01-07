@@ -699,6 +699,8 @@ INPUT Bachelor-template.aux
 INPUT Bachelor-template.aux
 INPUT includefile/frontmatter.aux
 INPUT includefile/frontmatter.aux
+INPUT includefile/backmatter.aux
+INPUT includefile/backmatter.aux
 OUTPUT Bachelor-template.aux
 INPUT d:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT d:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -708,10 +710,10 @@ INPUT Bachelor-template.out
 INPUT Bachelor-template.out
 INPUT Bachelor-template.out
 INPUT Bachelor-template.out
+OUTPUT Bachelor-template.pdf
 INPUT ./Bachelor-template.out
 INPUT ./Bachelor-template.out
 OUTPUT Bachelor-template.out
-OUTPUT Bachelor-template.pdf
 INPUT d:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT d:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT d:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -1031,17 +1033,24 @@ INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei35.tfm
 INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei75.tfm
 INPUT Bachelor-template.toc
 INPUT Bachelor-template.toc
-OUTPUT Bachelor-template.toc
-INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei32.tfm
-INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei34.tfm
 INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei75.tfm
-INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei05.tfm
-INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei15.tfm
-INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei78.tfm
-INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei03.tfm
-INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei39.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei76.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei18.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei28.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei77.tfm
+<<<<<<< HEAD
 INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei17.tfm
 INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei38.tfm
 INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei74.tfm
@@ -1562,3 +1571,7 @@ INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei77.tfm
 INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei17.tfm
 INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei38.tfm
 INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei74.tfm
+=======
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei32.tfm
+INPUT d:/texlive/2017/texmf-dist/fonts/tfm/zhmetrics/gbkhei/gbkhei34.tfm
+>>>>>>> parent of 48c111b... Fuck0.2

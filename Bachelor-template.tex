@@ -84,7 +84,7 @@ S. McFarling提出的混合（融合）分支预测器相比之下会有更加�
   \centering
     \includegraphics[width=\textwidth]{2bit.png}
     \caption{2bit分支预测器}
-    \label{fig:1}
+    \label{fig:2}
   \end{figure}
 这种方法的优点在于指令必须选择某个分支连续两次，才能够实现状态的翻转，进而改变预测的分支。回到刚才的情况，一开始的时候
 饱和计数器处于强跳转的状态，那么一次F的影响只能使计数器回到弱跳转状态，避免了接连的空翻，相比之下错误率下降。同样的道理，
@@ -98,6 +98,12 @@ S. McFarling提出的混合（融合）分支预测器相比之下会有更加�
  依靠2bit分支预测器就会出现预测错误的结果，因为前三次的跳转不能够表明这一次也一定跳转。相对应的是，我们可以把前三次的历史
  记录看作是一种模式，然后在此基础上构建饱和计数器，经过若干次训练，便可以得到一个结果:三次的跳转必然伴随着一次结果，这样我们
  往后的预测便会变得准确，提高了我们的正确率。\par
+ \begin{figure}[ht]
+  \centering
+    \includegraphics[width=\textwidth]{Local.png}
+    \caption{局部分支预测器}
+    \label{fig:3}
+  \end{figure}
  局部分支预测器构建了两个表:一个被称为BHT(Branch History Table)，另一个被称为BPT(Branch Pattern Table)。BHT以跳转指令的
  地址作为索引，记录改分支的历史记录，然后根据分支的历史记录去查询对应的饱和计数器，根据计数器的高位进行相对应预测。预测的结果
  同样会不断更新历史和计数器。在经过大量训练后便可以得到相当优秀的正确率。这种预测方式被现代CPU普遍地采纳。
@@ -108,40 +114,42 @@ S. McFarling提出的混合（融合）分支预测器相比之下会有更加�
 if(a<=0) todo;\par
 第一条指令和第二条指令必然只会发生一条，通过观察第一条指令的跳转情况便可以预测第二条指令的跳转结果。对于一个不断变化的a，这个
 时候局部分支预测器便不能仅仅通过自身的历史记录来推测出下一次跳转情况。因此，全局分支预测器采取的做法是，记录下前几条指令的跳转情况，
-然后通过这个历史记录来查找对应的饱和计数器，从而解决了跳转指令的相关问题。
+然后通过这个历史记录来查找对应的饱和计数器，从而解决了跳转指令的相关问题。\par
+全局分支预测器通过GR(Global History)来索引饱和计数器，获得对应的预测结果。\par
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=\textwidth]{Global.png}
+    \caption{全局分支预测器}
+    \label{fig:3}
+  \end{figure}
+
+\subsection{混合分支预测器}
+相比以上两种分支预测器，混合分支预测器仅仅是简单地将他们组合起来，从而在面对复杂的分支情况时能够更有效地采取不同的预测器，获得更加优秀
+的表现。混合分支预测器将预测的任务分别交给全局分支预测器和局部分支预测器去预测，然后根据它们的预测结果以及预测的指令地址，来更新自己的
+索引表，这个表记录着若干的饱和计数器，饱和计数器的状态决定了全局分支预测器决定要采纳哪一种预测结果。
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=\textwidth]{Merge.png}
+    \caption{混合分支预测器}
+    \label{fig:3}
+  \end{figure}
 
 \subsection{基于上述分支预测器的优化}
-由于硬件上述分支预测器
+由于硬件方面的限制，上述分支预测器的索引不可能直接取到整个PC的大小，相对地，我们会采用记录PC低位的方法来作为表的索引。对于全局历史分支
+预测器，还发展出了PC地址和GR记录做异或的方法来作为索引，这种做法能更好地避免冲突。但是受制于所写汇编程序的大小，相关的优化也就没有进行。
+对于PC地址我做了对32取模，用来作为索引。
 
   
-  \chapter{杂七杂八的话}
+  \chapter{分支预测算法的软件实现与验证}
   
-  \section{Readme}
+  \section{32位MIPS指令集实现}
+  指令集方面我实现了所有32位MIPS指令:
   
-  模板文件的结构, 如下表所示:
-   \begin{table}[ht]\centering
-  \begin{tabular}{r|r|l}
-    \hline\hline
-    \multicolumn{2}{l|}{Bachelor-template.tex }       & 主文档. 在其中填写正文.             \\ \hline
-                                    & frontmatter.tex & 郑重声明、中英文摘要.               \\ \cline{2-3}
-    \raisebox{1em}{includefile 文件夹} &  backmatter.tex & 致谢.                       \\ \hline
-    \multicolumn{2}{l|}{figures 文件夹}                  & 存放图片文件.                   \\ \hline
-    \multicolumn{2}{l|}{WHUBachelor.cls }             & 定义文档格式的 class file. 不可删除. \\ \hline\hline
-  \end{tabular}
-  \end{table}
-  
-  无需也不要改变、移动上述文档的位置.
-  
-  如果不习惯用~\verb|\include{ }|~的方式加入``子文档'', 当然可以把它们合并在主文档, 成为一个文档.
-  ({\kaishu 但是这样并不会给我们带来方便.})
-  
-  利用~WinEdt~的~Project tree, 可以方便地管理这些文件:
-  \begin{itemize}
-      \item 点击~WinEdt~窗口的~Project Tree~按键;
-      \item 再点击~WinEdt~窗口的~Set Main File~按键;
-  \end{itemize}
-  接下来的管理, 已经清楚地展示在跳出的窗口中了. 再去处理其他的文件时, 还要点击~WinEdt~窗口的~Remove Main File~按键.
-  
+\begin{itemize}
+  \item R型指令:add,addu,sub,subu,and,or,xor,nor,slt,sltu,sll,srl,sra,sllv,srlv,srav,jr
+  \item I型指令:addi,addiu,andi,ori,xori,lui,lw,sw,beq,bne,slti,sltiu
+  \item J型指令:j,jal
+\end{itemize}
   
   \section{更新记录}
   2016 年 06 月更新: 正文字体为小四号; 英文字体为 Times New Roman; 修订图表标题的字体、字号; 修订目录的字号; 修订附录章节编号的问题. 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.1.2)  7 JAN 2018 13:54
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.1.2)  7 JAN 2018 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1874,6 +1874,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--62
 
  [7]
 \zihao {-2}1
+[1
+
+
+] [2] [3]
+\zihao {-2}2
 \g__fontspec_family_FangSong_int=\count275
 .................................................
 . fontspec info: "no-font-shape"
@@ -1902,10 +1907,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--62
 . <->"FangSong/OT:script=hani;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
-[1
-
-
-]
 \g__fontspec_family_KaiTi_int=\count276
 .................................................
 . fontspec info: "no-font-shape"
@@ -1932,12 +1933,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--62
 . - 'normal' (m/n) with NFSS spec.: <->"KaiTi/OT:script=hani;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
- [2]
-\zihao {-2}2
-[3
+[4
 
-] [4] [5]
-Overfull \hbox (5.2893pt too wide) in paragraph at lines 228--230
+] [5] [6]
+Overfull \hbox (5.2893pt too wide) in paragraph at lines 212--214
 []\TU/KaiTi(0)/m/n/12.045 关 于 此 问 题\TU/TimesNewRoman(0)/m/n/12.045 , \TU/KaiTi(
 0)/m/n/12.045 请 参 见 文 献 []\TU/lmtt/m/n/12.045 \cite{r2}\TU/TimesNewRoman(0)/m/n
 /12.045 . \TU/KaiTi(0)/m/n/12.045 作 者 某 某 还 提 到 了 某 某 概 念 []\TU/lmtt/m/n/12.045
@@ -1945,82 +1944,82 @@ Overfull \hbox (5.2893pt too wide) in paragraph at lines 228--230
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 241.
+t line 225.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 246.
-[6]
+line 230.
+[7]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 263.
+nput line 247.
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 268.
+ line 252.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 272.
+input line 256.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 276.
+t line 260.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 280.
+put line 264.
 File: figures/Daisy.jpg Graphic file (type QTm)
- <use  "figures/Daisy.jpg" > [7] [8]
+ <use  "figures/Daisy.jpg" > [8] [9]
 \zihao {-2}3
-[9
+[10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 []\TU/TimesNewRoman(0)/m/n/12.045 Herbert Voß, Mathmode, []$[][][][] [] [] [] [
 ][][] [] [][][] [] [][] [] [][] [] [][][][] [] [][][][] [] [][][][] [] [][][][]
  []
  []
 
-[10
+[11
 
 
 ]
 \openout2 = `includefile/backmatter.aux'.
 
- (./includefile/backmatter.tex) [11
+ (./includefile/backmatter.tex) [12
 
 
 ]
 附录 A
-[12
+[13
 
 
 ]
 附录 B
-[13
+[14
 
 ]
 附录 C
-[14
+[15
 
 ]
 \tf@thm=\write5
 \openout5 = `Bachelor-template.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 404.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 404.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 388.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 388.
  (./Bachelor-template.aux (./includefile/frontmatter.aux)
 (./includefile/backmatter.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 404.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 404.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 388.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 388.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 404.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 388.
  ) 
 Here is how much of TeX's memory you used:
  29638 strings out of 493005
- 566801 string characters out of 6137957
- 604592 words of memory out of 5000000
+ 566816 string characters out of 6137957
+ 608764 words of memory out of 5000000
  33248 multiletter control sequences out of 15000+600000
  18351 words of font info for 141 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  63i,12n,70p,10455b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Bachelor-template.pdf (22 pages).
+Output written on Bachelor-template.pdf (23 pages).

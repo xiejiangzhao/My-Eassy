@@ -1,0 +1,110 @@
+% !Mode:: "TeX:UTF-8"
+
+%%% 此部分需要自行填写: (1) 中文摘要及关键词 (2) 英文摘要及关键词
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% -------------  英文封面 (无需改动)-------------   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\renewcommand{\baselinestretch}{1.5}  %下文的行距
+\vspace*{0.5cm}
+\begin{center}
+{\Large \bf Computer Organization Theory \\[1ex] Course Essay }
+\end{center}
+\vspace{2.5cm}
+\begin{center}{\zihao{2} \the\Etitle \par}\end{center}
+
+\vfill
+
+\begin{center}
+\zihao{4}
+\begin{tabular}{ r l }
+ School (Department): & {\sc \the\Eschoolname}\\
+  Major:          &   {\sc\the\Emajor}  \\
+ Candidate:      &  {\sc \the\Eauthor}      \\
+ Supervisor:     &  {\sc \the\Esupervisor}
+\end{tabular}
+
+\vspace*{2cm}
+\begin{center}
+   \ifprint % 文档打印, 使用黑白校徽.
+  \includegraphics[height=4cm]{sysu.pdf}       %%  黑白的.
+  \else
+  \includegraphics[height=4cm]{sysu.pdf} %%  彩色的.
+  \fi
+\end{center}
+
+
+\zihao{-2}
+%\the\Schoolname\\
+{\sc Sun Yat-sun University}
+
+\vspace*{1.0cm}
+
+\the\Edate
+
+\end{center}
+%%% 郑重声明部分无需改动
+
+%%%---- 郑重声明 (无需改动)------------------------------------%
+\newpage
+\vspace*{20pt}
+\begin{center}{\ziju{0.8}\textbf{\songti\zihao{2} 郑重声明}}\end{center}
+\par\vspace*{30pt}
+\renewcommand{\baselinestretch}{2}
+
+{\zihao{4}%
+
+本人呈交的论文, 是独立进行研究工作所取得的成果,
+所有数据、图片资料真实可靠. 尽我所知, 除文中已经注明引用的内容外,
+本论文的研究成果不包含他人享有著作权的内容.
+对本论文所涉及的研究工作做出贡献的其他个人和集体,
+均已在文中以明确的方式标明. 本论文的知识产权归属于培养单位.\\[2cm]
+
+\hspace*{1cm}本人签名: $\underline{\hspace{3.5cm}}$
+\hspace{2cm}日期: $\underline{\hspace{3.5cm}}$\hfill\par}
+%------------------------------------------------------------------------------
+\baselineskip=23pt  % 正文行距为 23 磅
+%------------------------------------------------------------------------------
+
+
+
+
+
+%%======中文摘要===========================%
+\begin{cnabstract}
+在文章中我对CPU发展历史以来所采取的预测策略进行了软件上的模拟，对流水线CPU动态预测的性能作出了分析统计。关于此次的CPU设计，我实现了32位MIPS指令集。在学习CPU设计过程中，
+流水线CPU的出现极大地提高了CPU的执行效率，但同时也需要合理解决三大冲突。对于控制冲突而言，需要做到尽可能准确预测。近代CPU在
+这一方面做分支预测已经非常准确，但是流水线深度的逐渐增加使得哪怕微小的提升也将极大影响CPU的性能。因此文中对过往和近年来热门的预测方法作出评价。\\
+为了减少工作量，我采用Python作为工具来解决这个问题。软件层面上我实现了对MIPS汇编程序的模拟执行，并对预测效果作出了统计。\\
+分析结果表现混合分支预测器的性能非常优越，相比于传统的局部分支预测和全局分支预测，能够在更短时间内提高预测率并且拥有更加稳定准确的预测正确率。\\
+文中的分析结果提供了一种可行性高的办法来评价CPU预测采取策略，可以作为探究分支策略效果的一种手段。
+
+
+\end{cnabstract}
+\par
+\vspace*{2em}
+
+
+%%%%--  关键词 -----------------------------------------%%%%%%%%
+%%%%-- 注意: 每个关键词之间用“；”分开，最后一个关键词不打标点符号
+\cnkeywords{计算机组成原理; 流水线CPU; 动态分支预测;  }
+
+
+%%====英文摘要==========================%
+
+
+\begin{enabstract}
+  In the article, I have carried on the software simulation to the forecast tactics that has taken since the CPU development history, has carried on the analysis statistics to the pipeline CPU dynamic forecast performance. About this CPU design, I have realized 32 MIPS instruction set. In learning CPU design process,
+  The advent of pipelined CPUs has greatly increased the efficiency of CPU implementation, but at the same time it also requires a reasonable solution to the three major conflicts. For control conflicts, forecasts need to be as accurate as possible. Modern CPU in
+  Branch prediction is already very accurate on the one hand, but the gradual increase in pipeline depth makes even a small increase will greatly affect the CPU performance. Therefore, the text in the past and in recent years the popular prediction method to make an assessment. \\
+  In order to reduce the workload, I use Python as a tool to solve this problem. At the software level, I implemented the simulation of the MIPS assembler and made statistics on the predicted results. \\
+  The results of the analysis show that the performance of the hybrid branch predictor is superior. Compared with the traditional local branch prediction and global branch prediction, the hybrid branch predictor can improve the prediction rate in a shorter time and has a more stable and accurate prediction accuracy. \\
+  The analysis results in this paper provide a highly feasible way to evaluate the CPU prediction strategy, which can be used as a means to explore the effect of the branch strategy.
+
+\end{enabstract}
+\par
+\vspace*{2em}
+
+%%%%%-- Key words --------------------------------------%%%%%%%
+%%%%-- 注意: 每个关键词之间用“；”分开，最后一个关键词不打标点符号
+ \enkeywords{Computer composition principle; Pipeline CPU; Dynamic branch prediction  }

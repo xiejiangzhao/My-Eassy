@@ -1,23 +1,22 @@
 \contentsline {chapter}{摘要}{III}{chapter*.1}
 \contentsline {chapter}{ABSTRACT}{IV}{chapter*.2}
 \contentsline {chapter}{\numberline {\zihao {-2}1\hspace {.3em}}绪论}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}分支预测算法的意义}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}技术发展现状与趋势}{2}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}静态分支预测技术}{2}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}1bit分支预测器}{2}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}2bit分支预测器}{2}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}局部分支预测器}{3}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}全局分支预测器}{5}{subsection.1.2.5}
-\contentsline {subsection}{\numberline {1.2.6}混合分支预测器}{5}{subsection.1.2.6}
-\contentsline {subsection}{\numberline {1.2.7}基于上述分支预测器的优化}{6}{subsection.1.2.7}
-\contentsline {chapter}{\numberline {\zihao {-2}2\hspace {.3em}}分支预测算法的软件实现与验证}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}32位MIPS指令集实现}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}不同预测方法的效果测试}{8}{section.2.2}
-\contentsline {section}{\numberline {2.3}预测结果评价}{9}{section.2.3}
-\contentsline {chapter}{\numberline {\zihao {-2}3\hspace {.3em}}项目总结}{10}{chapter.3}
-\contentsline {chapter}{参考文献}{11}{section*.11}
-\contentsline {chapter}{致谢}{12}{chapter*.13}
-\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}测试}{13}{appendix.A}
-\contentsline {section}{\numberline {A.1}第一个测试}{13}{section.A.1}
-\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}附录测试}{14}{appendix.B}
-\contentsline {chapter}{\numberline {附录 C\hspace {.3em}}附录测试}{15}{appendix.C}
+\contentsline {section}{\numberline {1.1}流水线CPU中的控制冲突}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}分支预测算法的意义}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}技术发展现状与趋势}{2}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}静态分支预测技术}{2}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}1bit分支预测器}{3}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}2bit分支预测器}{3}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}局部分支预测器}{4}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}全局分支预测器}{5}{subsection.1.3.5}
+\contentsline {subsection}{\numberline {1.3.6}混合分支预测器}{6}{subsection.1.3.6}
+\contentsline {subsection}{\numberline {1.3.7}基于上述分支预测器的优化}{7}{subsection.1.3.7}
+\contentsline {chapter}{\numberline {\zihao {-2}2\hspace {.3em}}分支预测算法的软件实现与验证}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}32位MIPS指令集实现}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}不同预测方法的效果测试}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}预测结果评价}{10}{section.2.3}
+\contentsline {chapter}{\numberline {\zihao {-2}3\hspace {.3em}}项目总结}{11}{chapter.3}
+\contentsline {chapter}{参考文献}{12}{section*.12}
+\contentsline {chapter}{致谢}{13}{chapter*.14}
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}项目相关实现细节}{14}{appendix.A}
+\contentsline {section}{\numberline {A.1}分支预测器评价的Python架构}{14}{section.A.1}
